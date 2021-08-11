@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+header nav a {
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    margin-left: 5rem;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+}
+
+.logo-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url(/images/sf.png);
+    background-size: 100%;
+}
+
+#calc {
+    border: 1px solid grey;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#calc #display {
+    display: block;
+    width: 180px;
+    height: 25px;
+    margin: 5px;
+    text-align: right;
+}
+
+#calc .buttons {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calc .buttons:hover {
+    background-color: black;
+    color: white;
+}
+
+#calc .butt-delete {
+    border: 1px solid rgb(44, 44, 44);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+#calc .butt-delete:hover {
+    background-color: black;
+    color: white;
+}
+
+#calc .operators {
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#calc .operators:hover {
+    background-color: black;
+    color: white;
+}
