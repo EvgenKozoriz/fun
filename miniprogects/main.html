@@ -14,13 +14,14 @@
             <h1>ZXC</h1>
         </div>
         <nav>
-            <a href="#">link2</a>
             <a href="#">link1</a>
+            <a href="#">link2</a>
             <a href="#">link3</a>
             <a href="#">link4</a>
             <a href="#">link5</a>
         </nav>
     </header>
+
     <div class="container">
         <div id="calc">
             <input id="display" type="text" disabled>
@@ -43,6 +44,30 @@
             <button class="operators" value="+" disabled>+</button>
         </div>
         <script src="./scripts/calc-script.js"></script>
+    </div>
+
+    <div class="container">
+        <div id="XO-game">
+            <div class="field">
+                <div class="cell" data-id="0"></div>
+                <div class="cell" data-id="1"></div>
+                <div class="cell" data-id="2"></div>
+                <div class="cell" data-id="3"></div>
+                <div class="cell" data-id="4"></div>
+                <div class="cell" data-id="5"></div>
+                <div class="cell" data-id="6"></div>
+                <div class="cell" data-id="7"></div>
+                <div class="cell" data-id="8"></div>
+            </div>
+            <p class="message">Ходит <span id="player-move"></span></p>
+            <button class="start-button">Начать сначала</button>
+            <div class="statistic">
+                <p>Выиграл Х:<span id="win-x">0</span></p>
+                <p>Выиграл У:<span id="win-y">0</span></p>
+                <p>Ничья:<span id="draw">0</span></p>
+            </div>
+        </div>
+        <script src="./scripts/XO-script.js"></script>
     </div>
 </body>
 </html>

@@ -29,6 +29,11 @@ header nav a {
     background-size: 100%;
 }
 
+.container {
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
+}
+
 #calc {
     border: 1px solid grey;
     width: 200px;
@@ -89,4 +94,41 @@ header nav a {
 #calc .operators:hover {
     background-color: black;
     color: white;
+}
+
+#XO-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#XO-game .field {
+    width: 156px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+#XO-game .field .cell {
+    width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: arial;
+	display: inline-block;
+	font-size: 26px;
+	border: 1px solid #000;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: background .1s;
+}
+
+#XO-game .message {
+    text-align: center;
+}
+#XO-game .statistic {
+    padding: 0 15px;
+    border: 1px dotted black;
 }

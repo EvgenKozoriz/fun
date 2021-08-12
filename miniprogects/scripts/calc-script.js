@@ -16,8 +16,8 @@ for (let button of buttons) {
             result += value
             lastSymbol = value
             
-            console.log('last symbol:' + lastSymbol)
-            console.log('result:' + result)
+            // console.log('last symbol:' + lastSymbol)
+            // console.log('result:' + result)
     
  
             if (isNaN(lastSymbol) === false) {
@@ -36,8 +36,8 @@ for (let operator of operators) {
         display.value += valueOp
         result += valueOp
 
-        console.log('last symbol:' + lastSymbol)
-        console.log('result:' + result)
+        // console.log('last symbol:' + lastSymbol)
+        // console.log('result:' + result)
 
         if (lastSymbol === '/' || '*' || '-' ||'+' || '.') {
             for (let operator of operators) {
