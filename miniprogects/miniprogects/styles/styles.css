@@ -1,0 +1,134 @@
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+header nav a {
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    margin-left: 5rem;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+}
+
+.logo-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url(/images/sf.png);
+    background-size: 100%;
+}
+
+.container {
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
+}
+
+#calc {
+    border: 1px solid grey;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#calc #display {
+    display: block;
+    width: 180px;
+    height: 25px;
+    margin: 5px;
+    text-align: right;
+}
+
+#calc .buttons {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calc .buttons:hover {
+    background-color: black;
+    color: white;
+}
+
+#calc .butt-delete {
+    border: 1px solid rgb(44, 44, 44);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+#calc .butt-delete:hover {
+    background-color: black;
+    color: white;
+}
+
+#calc .operators {
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#calc .operators:hover {
+    background-color: black;
+    color: white;
+}
+
+#XO-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#XO-game .field {
+    width: 156px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+#XO-game .field .cell {
+    width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: arial;
+	display: inline-block;
+	font-size: 26px;
+	border: 1px solid #000;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: background .1s;
+}
+
+#XO-game .message {
+    text-align: center;
+}
+#XO-game .statistic {
+    padding: 0 15px;
+    border: 1px dotted black;
+}
